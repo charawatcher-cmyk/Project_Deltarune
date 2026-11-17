@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPG_project.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,97 +7,28 @@ using System.Threading.Tasks;
 
 namespace RPG_project.Entities
 {
-    internal class Enemy
+    public class Enemy : BaseCharacter
     {
-        private string name;
-        private int level;
-        private int attack;
-        private int defense;
-        private int health;
-        private int maxHealth;
-        private int rewardGold;
-        private int rewardXp;
-        private string specialAbility;
-        public Enemy(string name, int level, int attack, int defense, int health, int maxHealth, int rewardGold, int rewardXp, string specialAbility)
+        protected int _attack = 0;
+        protected int _defense = 0;
+        protected int _rewardGold = 0;
+        protected int _rewardXp = 0;
+
+        public Enemy(string name, int level) : base(name, level)
         {
-            this.name = name;
-            this.level = level;
-            this.attack = attack;
-            this.defense = defense;
-            this.health = this.maxHealth=health;
-            this.rewardGold = rewardGold;
-            this.rewardXp = rewardXp;
-            this.specialAbility = specialAbility;
-        }
-        public string getName()
-        {
-            return this.name;
+            _attack = 25 * level;
+            _defense = 10 * level;
+            this.HP = new ChangingValue(level * 500);
+
+            _rewardGold = 20 * level;
+            _rewardXp = 50 * level;
         }
 
-        public int getLevel()
-        {
-            return this.level;
-        }
+        public int GetAttack() => _attack;
+        public int GetDefense() => _defense;
+        public int GetRewardGold() => _rewardGold;
+        public int GetRewardXp() => _rewardXp;
 
-        public int getAttack()
-        {
-            return this.attack;
-        }
-
-        public int getDefense()
-        {
-            return this.defense;
-        }
-
-        public int getHealth()
-        {
-            return this.health;
-        }
-        public int getRewardGold()
-        {
-            return this.rewardGold;
-        }
-
-        public int getRewardXP()
-        {
-            return this.rewardXp;
-        }
-
-        public string getSpecialAbility()
-        {
-            return this.specialAbility;
-        }
-        public void TakeDamage(int value)
-        {
-            this.health -= value;
-
-            if (this.health < 0)
-            {
-                this.health = 0;
-            }
-        }
-
-        public void Heal(int value)
-        {
-            this.health += value;
-
-            if (this.health > this.maxHealth)
-            {
-                this.health = this.maxHealth;
-            }
-        }
-
-        public void AttackPlayer(Player player)
-        {
-            int damage = this.attack - player.CalculateDefense();
-
-            if (damage < 1)
-            {
-                damage = 1;
-            }
-
-            player.TakeDamage(damage);
-        }
     }
 
 }

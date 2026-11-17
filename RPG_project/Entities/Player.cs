@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPG_project.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,210 +7,117 @@ using System.Threading.Tasks;
 
 namespace RPG_project.Entities
 {
-    internal class Player
+    public class Player : BaseCharacter
     {
-        private string name;
+        protected int _levelCup = 1000;
+        protected int _expirience = 0;
+        protected int _strength = 0;
+        protected int _endurance = 0;
+        protected int _agility = 0;
+        protected int _intelligence = 0;
 
-        private int level;
-        private int levelCup;
-        private int experience;
+        public ChangingValue MP;
 
-        private int strength;
-        private int endurance;
-        private int agility;
-        private int intelligence;
+        protected int _gold = 0;
+        protected Weapon _weapon = null;
+        protected Armor _armor = null;
 
-        private int health;
-        private int maxHealth;
-
-        private int mana;
-        private int maxMana;
-
-        private int gold;
-        private Weapon weapon;
-        private Armor armor;
-        public Player()
+        public Player(string name) : base(name, 1)
         {
-            this.name = "Kris Dreemurr";
+            this._strength = 20;
+            this._endurance = 10;
+            this._agility = 16;
+            this._intelligence = 16;
+            
 
-            this.level = 1;
-            this.levelCup = 100;
-            this.experience = 0;
-
-            this.strength = 10;
-            this.endurance = 10;
-            this.agility = 10;
-            this.intelligence = 10;
-
-            this.maxHealth = 200;
-            this.maxMana = 200;
-            this.health = endurance * 10;
-            this.mana = intelligence * 5;
-
-            this.gold = 100;
-            this.weapon = null;
-            this.armor = null;
-
-
-        }
-        public string getName()
-        {
-            return this.name;
+            this.HP = new ChangingValue(this._endurance * 200);
+            this.MP = new ChangingValue(this._intelligence * 100);
         }
 
-        public int getLevel()
+        public void AddWeapon(Weapon weapon)
         {
-            return this.level;
+            this._weapon = weapon;
         }
-
-        public int getLevelCup()
+        public void AddArmor(Armor armor)  
         {
-            return this.levelCup;
+            this._armor = armor;
         }
-
-        public int getExperience()
+        public bool SpendGold(int amount)
         {
-            return this.experience;
-        }
-
-        public int getStrength()
-        {
-            return this.strength;
-        }
-
-        public int getEndurance()
-        {
-            return this.endurance;
-        }
-
-        public int getAgility()
-        {
-            return this.agility;
-        }
-
-        public int getIntelligence()
-        {
-            return this.intelligence;
-        }
-
-        public int getHealth()
-        {
-            return this.health;
-        }
-
-        public int getMaxHealth()
-        {
-            return this.maxHealth;
-        }
-
-        public int getMana()
-        {
-            return this.mana;
-        }
-
-        public int getMaxMana()
-        {
-            return this.maxMana;
-        }
-
-        public int getGold()
-        {
-            return this.gold;
-        }
-        public Weapon getWeapon()
-        {
-            return this.weapon;
-        }
-
-        public Armor getArmor()
-        {
-            return this.armor;
-        }
-
-
-
-        public double getCriticalChance()
-        {
-            return this.agility * 0.5;
-        }
-        public int  CalculateAttackPower() 
-        {
-            int attack = this.strength;
-            if (this.weapon != null)
+            if (_gold >= amount)
             {
-        
-                attack += this.weapon.getAttackBonus();
+                _gold -= amount;
+                return true;
+            }
+            return false;
+        }
+
+        public int OnePunch()
+        {
+            int attack = this._strength;
+
+            if (_weapon != null)
+            {
+                attack += _weapon.GetDamage();
+            }
+
+            if (this._agility / 2 <= CustomRandom.GetRandomNumber(1, 100))
+            {
+                attack *= 2;
             }
 
             return attack;
         }
-        public int CalculateDefense()
+        public int getLevel()
         {
-            int defense = this.agility;
-
-            if (this.armor != null)
-            {
-                defense += this.armor.getDefenseBonus();
-            }
-
-            return defense;
-        }
-        public void TakeDamage(int value)
-        {
-            this.health -= value;
-
-            if (this.health < 0)
-            {
-                this.health = 0;
-            }
+            return this._level;
         }
 
-        public void Heal(int value)
+        public int getLevelCup()
         {
-            this.health += value;
-
-            if (this.health > this.maxHealth)
-            {
-                this.health = this.maxHealth;
-            }
+            return this._levelCup;
         }
 
-        public void UseMana(int value)
+        public int getExperience()
         {
-            this.mana -= value;
-
-            if (this.mana < 0)
-            {
-                this.mana = 0;
-            }
+            return this._expirience;
         }
 
-        public void AddGold(int value)
+        public int getStrength()
         {
-            this.gold += value;
+            return this._strength;
         }
-        public void AddExperience(int value)
+
+        public int getEndurance()
         {
-            this.experience += value;
+            return this._endurance;
+        }
 
-            if (this.experience >= this.levelCup)
-            {
-                this.experience -= this.levelCup;
-                this.level++;
+        public int getAgility()
+        {
+            return this._agility;
+        }
 
-                this.levelCup += 50;
+        public int getIntelligence()
+        {
+            return this._intelligence;
+        }
 
-                this.strength += 2;
-                this.endurance += 2;
-                this.agility += 2;
-                this.intelligence += 2;
+        
 
-                this.maxHealth = this.endurance * 10;
-                this.maxMana = this.intelligence * 5;
+        
+        public int getGold()
+        {
+            return this._gold;
+        }
+        public Weapon getWeapon()
+        {
+            return this._weapon;
+        }
 
-                this.health = this.maxHealth;
-                this.mana = this.maxMana;
-            }
+        public Armor getArmor()
+        {
+            return this._armor;
         }
 
     }

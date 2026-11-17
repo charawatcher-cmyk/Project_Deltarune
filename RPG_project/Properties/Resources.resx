@@ -118,13 +118,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="kris-battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kris-battle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="deltarune-fontain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deltarune-fontain.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zfsb0ys4zppa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zfsb0ys4zppa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shadow_Mantle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShadowMentle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twisted_Sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\twistedsword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Devilsknife" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Devilsknife.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Auto_Axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deltarune_items_auto_axe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aqua_Knife" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\knife2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Winglade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\winglade.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Freeze_Ring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Freeze ring.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Justice_Axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Justice_Axe_in_Overworld.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bounce_Blade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bounce_Blade.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mane_Axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\axe1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mecha_Saber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mechasaber.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TennaTie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TennaTiejpg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldWidow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldWidow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seth_Specs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seth_Specs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LodeStone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LodeStone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Royal_Pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Royal_Pin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spike_Band" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spike_Band.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_Ribbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue_Ribbon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chain_Mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chain_Mail.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Amber_Card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Amber_Card.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deal_Maker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Deal_Maker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

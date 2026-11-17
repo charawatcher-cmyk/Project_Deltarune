@@ -6,29 +6,13 @@ using System.Threading.Tasks;
 
 namespace RPG_project.Entities
 {
-    internal class Weapon
+    public class Weapon : BaseItem
     {
-        private string name;
-        private int cost;
-        private int attackBonus;
-        public Weapon(string name , int cost,int attackBonus) 
-        { 
-            this.name= name;
-            this.cost = cost;
-            this.attackBonus= attackBonus;
-        }
-        public string getName()
+        public Weapon(string name, int price, int damage) : base(name, price, damage)
         {
-            return this.name;
         }
-        public int getCost() 
-        { 
-            return this.cost;
-        }
-        public int getAttackBonus() 
-        {
-            return this.attackBonus;
-        }
+
+        public int GetDamage() => _value;
     }
-    
+
 }
