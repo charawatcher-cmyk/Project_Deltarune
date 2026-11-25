@@ -31,33 +31,35 @@
             this.panelContentShop = new System.Windows.Forms.Panel();
             this.flowLayoutPanelShop = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelName1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.labelInformation1 = new System.Windows.Forms.Label();
+            this.labelName1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.labelInformation2 = new System.Windows.Forms.Label();
             this.labelName2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.labelInformation3 = new System.Windows.Forms.Label();
             this.labelName3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.labelInformation4 = new System.Windows.Forms.Label();
             this.labelName4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.labelInformation5 = new System.Windows.Forms.Label();
             this.labelName5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelShopText = new System.Windows.Forms.Label();
+            this.pictureBoxShopImage = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxShopImage = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.labelShopText = new System.Windows.Forms.Label();
             this.panelContentShop.SuspendLayout();
             this.flowLayoutPanelShop.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,19 +67,20 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopImage)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContentShop
             // 
-            this.panelContentShop.Controls.Add(this.labelShopText);
+            this.panelContentShop.Controls.Add(this.panel7);
             this.panelContentShop.Controls.Add(this.flowLayoutPanelShop);
-            this.panelContentShop.Controls.Add(this.pictureBoxShopImage);
             this.panelContentShop.Controls.Add(this.panel6);
             this.panelContentShop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContentShop.Location = new System.Drawing.Point(0, 0);
@@ -96,9 +99,9 @@
             this.flowLayoutPanelShop.Controls.Add(this.panel5);
             this.flowLayoutPanelShop.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanelShop.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanelShop.Location = new System.Drawing.Point(0, 230);
+            this.flowLayoutPanelShop.Location = new System.Drawing.Point(0, 202);
             this.flowLayoutPanelShop.Name = "flowLayoutPanelShop";
-            this.flowLayoutPanelShop.Size = new System.Drawing.Size(800, 141);
+            this.flowLayoutPanelShop.Size = new System.Drawing.Size(800, 169);
             this.flowLayoutPanelShop.TabIndex = 3;
             this.flowLayoutPanelShop.WrapContents = false;
             // 
@@ -114,17 +117,16 @@
             this.panel1.Size = new System.Drawing.Size(689, 100);
             this.panel1.TabIndex = 0;
             // 
-            // labelName1
+            // button1
             // 
-            this.labelName1.AutoSize = true;
-            this.labelName1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelName1.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelName1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelName1.Location = new System.Drawing.Point(134, 3);
-            this.labelName1.Name = "labelName1";
-            this.labelName1.Size = new System.Drawing.Size(80, 29);
-            this.labelName1.TabIndex = 2;
-            this.labelName1.Text = "label2";
+            this.button1.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(523, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 36);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Купити";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelInformation1
             // 
@@ -138,6 +140,18 @@
             this.labelInformation1.TabIndex = 3;
             this.labelInformation1.Text = "label2";
             // 
+            // labelName1
+            // 
+            this.labelName1.AutoSize = true;
+            this.labelName1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelName1.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelName1.Location = new System.Drawing.Point(134, 3);
+            this.labelName1.Name = "labelName1";
+            this.labelName1.Size = new System.Drawing.Size(80, 29);
+            this.labelName1.TabIndex = 2;
+            this.labelName1.Text = "label2";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -149,6 +163,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(689, 100);
             this.panel2.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(523, 31);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(143, 36);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Купити";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // labelInformation2
             // 
@@ -186,6 +211,17 @@
             this.panel3.Size = new System.Drawing.Size(689, 100);
             this.panel3.TabIndex = 2;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(523, 31);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(143, 36);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Купити";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // labelInformation3
             // 
             this.labelInformation3.AutoSize = true;
@@ -221,6 +257,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(689, 100);
             this.panel4.TabIndex = 3;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(523, 31);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(143, 36);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Купити";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // labelInformation4
             // 
@@ -258,6 +305,17 @@
             this.panel5.Size = new System.Drawing.Size(689, 100);
             this.panel5.TabIndex = 4;
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(523, 35);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(143, 36);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Купити";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // labelInformation5
             // 
             this.labelInformation5.AutoSize = true;
@@ -281,6 +339,54 @@
             this.labelName5.Size = new System.Drawing.Size(80, 29);
             this.labelName5.TabIndex = 2;
             this.labelName5.Text = "label2";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.flowLayoutPanel1);
+            this.panel6.Location = new System.Drawing.Point(81, 111);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.TabIndex = 5;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.labelShopText);
+            this.panel7.Controls.Add(this.pictureBoxShopImage);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(800, 202);
+            this.panel7.TabIndex = 7;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(159, 11);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // labelShopText
+            // 
+            this.labelShopText.AutoSize = true;
+            this.labelShopText.BackColor = System.Drawing.Color.Black;
+            this.labelShopText.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelShopText.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelShopText.Location = new System.Drawing.Point(433, 6);
+            this.labelShopText.Name = "labelShopText";
+            this.labelShopText.Size = new System.Drawing.Size(87, 34);
+            this.labelShopText.TabIndex = 7;
+            this.labelShopText.Text = "label1";
+            // 
+            // pictureBoxShopImage
+            // 
+            this.pictureBoxShopImage.Image = global::RPG_project.Properties.Resources.zfsb0ys4zppa1;
+            this.pictureBoxShopImage.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxShopImage.Name = "pictureBoxShopImage";
+            this.pictureBoxShopImage.Size = new System.Drawing.Size(800, 205);
+            this.pictureBoxShopImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxShopImage.TabIndex = 1;
+            this.pictureBoxShopImage.TabStop = false;
+            this.pictureBoxShopImage.Click += new System.EventHandler(this.pictureBoxShopImage_Click);
             // 
             // pictureBox1
             // 
@@ -332,90 +438,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBoxShopImage
-            // 
-            this.pictureBoxShopImage.Image = global::RPG_project.Properties.Resources.zfsb0ys4zppa1;
-            this.pictureBoxShopImage.Location = new System.Drawing.Point(-9, -12);
-            this.pictureBoxShopImage.Name = "pictureBoxShopImage";
-            this.pictureBoxShopImage.Size = new System.Drawing.Size(819, 245);
-            this.pictureBoxShopImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxShopImage.TabIndex = 1;
-            this.pictureBoxShopImage.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(523, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 36);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Купити";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(523, 31);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 36);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Купити";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(523, 31);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(143, 36);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Купити";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(523, 31);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(143, 36);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Купити";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(523, 35);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 36);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Купити";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(81, 111);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
-            this.panel6.TabIndex = 5;
-            // 
-            // labelShopText
-            // 
-            this.labelShopText.AutoSize = true;
-            this.labelShopText.BackColor = System.Drawing.Color.Black;
-            this.labelShopText.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelShopText.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelShopText.Location = new System.Drawing.Point(405, 0);
-            this.labelShopText.Name = "labelShopText";
-            this.labelShopText.Size = new System.Drawing.Size(87, 34);
-            this.labelShopText.TabIndex = 6;
-            this.labelShopText.Text = "label1";
-            // 
             // ShopPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -425,7 +447,6 @@
             this.Name = "ShopPage";
             this.Size = new System.Drawing.Size(800, 371);
             this.panelContentShop.ResumeLayout(false);
-            this.panelContentShop.PerformLayout();
             this.flowLayoutPanelShop.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -437,12 +458,15 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShopImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -477,6 +501,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label labelShopText;
     }
 }

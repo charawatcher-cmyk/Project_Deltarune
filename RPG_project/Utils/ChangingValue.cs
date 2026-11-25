@@ -26,7 +26,7 @@ namespace RPG_project.Utils
         }
 
         public int GetCurrent() => _current;
-        public int GetMax() => _current;
+        public int GetMax() => _max;
 
         public void Increase(int amount)
         {
@@ -40,7 +40,7 @@ namespace RPG_project.Utils
         {
             this._current -= amount;
 
-            if (this._min < this._current)
+            if (this._min > this._current)
                 this._current = this._min;
         }
 

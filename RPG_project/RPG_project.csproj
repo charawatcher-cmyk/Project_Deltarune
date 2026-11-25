@@ -132,5 +132,29 @@
   <ItemGroup>
     <None Include="Resources\deltarune-fontain.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3266277363_preview_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3266277363_preview_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3266277363_preview_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3266277363_preview_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monster-soul-undertale.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

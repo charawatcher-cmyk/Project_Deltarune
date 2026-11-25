@@ -52,7 +52,7 @@ namespace RPG_project.Entities
             return false;
         }
 
-        public int OnePunch()
+        public int Attack()
         {
             int attack = this._strength;
 
@@ -119,7 +119,78 @@ namespace RPG_project.Entities
         {
             return this._armor;
         }
+        public int TakeDamage(int enemyAttack)
+        {
+            int defence = 0;
+            if (_armor != null)
+            {
+                defence = _armor.GetDefence();
+            }
 
-    }
+            int finalDamage = enemyAttack - defence;
+            if (finalDamage < 1) finalDamage = 1;
+
+            HP.Decrease(finalDamage);
+            return finalDamage;
+        }
+        public int NormalAttack()
+        {
+          
+            MP.Decrease(15);
+            return Attack();
+        }
+        public int HeavyAttack()
+        {
+            int heavyAttack = Attack() * 2;
+            return heavyAttack;
+        }
+        public void AddReward(int gold, int exp)
+        {
+            _gold += gold;
+            _expirience += exp;
+            if (_expirience >= _levelCup)
+            {
+                _expirience -= _levelCup;
+                _level++;
+                _levelCup += 500;
+                _strength += 3;
+                _endurance += 2;
+                _agility += 2;
+                _intelligence += 2;
+                HP.ChangeMax(_endurance * 200);
+                MP.ChangeMax(_intelligence * 100);
+            }
+
+        }
+        public void ChangeGold(int amount)
+        {
+            _gold += amount;
+            if (_gold < 0) _gold = 0;
+        }
+
+        public void ChangeStrength(int amount)
+        {
+            _strength += amount;
+            if (_strength < 1) _strength = 1;
+        }
+
+        public void ChangeEndurance(int amount)
+        {
+            _endurance += amount;
+            if (_endurance < 1) _endurance = 1;
+            HP.ChangeMax(_endurance * 200);
+        }
+        public void ChangeAgility(int amount)
+        {
+            _agility += amount;
+            if (_agility < 1) _agility = 1;
+        }
+        public void ChangeIntelligence(int amount)
+        {
+            _intelligence += amount;
+            if (_intelligence < 1) _intelligence = 1;
+            MP.ChangeMax(_intelligence * 100);
+        }
+    }   
 
 }

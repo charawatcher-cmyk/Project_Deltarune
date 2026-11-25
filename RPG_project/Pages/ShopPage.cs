@@ -105,5 +105,10 @@ namespace RPG_project.Pages
         {
             BuyItem(button5, 4);
         }
+
+        private void pictureBoxShopImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -193,4 +193,94 @@
   <data name="Deal_Maker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Deal_Maker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Lancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lancer-deltarune.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tenna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tenna-tenna-battle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roaring_Knight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deltarune-roaring-knight.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_K" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idle-stance.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gerson_Boom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hammer_of_Justice_battle_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aqua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aqua_battle_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Miss_Mizzle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Miss_Mizzle_battle_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Queen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Queen_battle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seth_battle_serious.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leafling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leafling_battle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow_battle_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jevil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jevil_battle_jumping.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Knight_battle_afterimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Knight_battle_afterimage.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cat_Mike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_Mike_battle_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Berdly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Berdly_battle_idle_serious.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kris_attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kris_battle_attack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kris_item" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kris_battle_item.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kris_guard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kris_battle_guard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kris_sitting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kris_battle_sitting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flowery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flowery_battle_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shadowguy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shadowguy_battle_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3266277363_preview_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3266277363_preview_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3266277363_preview_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3266277363_preview_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3266277363_preview_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3266277363_preview_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3266277363_preview_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3266277363_preview_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monster-soul-undertale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monster-soul-undertale.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kris_win" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kris_battle_victory.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

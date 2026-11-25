@@ -17,14 +17,14 @@ namespace RPG_project
     {
         Player Kris = new Player("Kris Dreemur");
         HomePage homePage;
-        BattlePage battlePage = new BattlePage();
+        BattlePage battlePage;
         ShopPage shopPage;
         
         public Form1()
         {
            
             InitializeComponent();
-             homePage = new HomePage(Kris);
+             homePage = new HomePage(Kris,this);
             shopPage = new ShopPage(Kris);
         }
 
@@ -47,8 +47,18 @@ namespace RPG_project
 
         private void buttonBattle_Click_1(object sender, EventArgs e)
         {
+            panel1.Visible = false;
+            battlePage = new BattlePage(Kris, this);
             this.panelContent.Controls.Clear();
             this.panelContent.Controls.Add(battlePage);
+        }
+        public void EndBattle()
+        {
+            panel1.Visible = true; 
+            homePage.UpdatePlayerInfo(); 
+
+            this.panelContent.Controls.Clear();
+            this.panelContent.Controls.Add(homePage);
         }
 
         private void buttonShop_Click_1(object sender, EventArgs e)
@@ -58,6 +68,19 @@ namespace RPG_project
             shopPage.Dock = DockStyle.Fill;
             this.panelContent.Controls.Add(shopPage);
             
+        }
+        public void OpenShop()
+        {
+            shopPage = new ShopPage(Kris);
+            this.panelContent.Controls.Clear();
+            this.panelContent.Controls.Add(shopPage);
+        }
+        public void OpenBattle()
+        {
+            panel1.Visible = false;
+            battlePage = new BattlePage(Kris, this);
+            this.panelContent.Controls.Clear();
+            this.panelContent.Controls.Add(battlePage);
         }
     }
 }
