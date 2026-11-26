@@ -60,6 +60,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GameServices\ArmorGenerator.cs" />
+    <Compile Include="GameServices\EnemyGenerator.cs" />
     <Compile Include="GameServices\ItemGenerator.cs" />
     <Compile Include="GameServices\Shop.cs" />
     <Compile Include="GameServices\WeaponGenerator.cs" />

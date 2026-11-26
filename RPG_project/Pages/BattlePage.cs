@@ -1,13 +1,8 @@
 ﻿using RPG_project.Entities;
+using RPG_project.GameServices;
 using RPG_project.Utils;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RPG_project.Pages
@@ -23,33 +18,21 @@ namespace RPG_project.Pages
             InitializeComponent();
             Kris = player;
             mainForm = form;
-            string[] specialAbilities = { "None","Сильний удар","Лікування"};
-            string[] enemyNames = { "Lancer", "Tenna", "Roaring Knight", "K_K", "Gerson Boom", "Flowery", "Aqua", "Shadow Guy", "Miss Mizle", "Seth", "Leafling", "Jevil", "Yellow", "Cat Mike", "Berdly", "Queen" };
-            Image[] enemyImages =
-            {
-              Properties.Resources.Lancer,Properties.Resources.Tenna,Properties.Resources.Knight_battle_afterimage,Properties.Resources.K_K,
-              Properties.Resources.Gerson_Boom,Properties.Resources.Flowery,Properties.Resources.Aqua,Properties.Resources.Shadowguy,
-              Properties.Resources.Miss_Mizzle,Properties.Resources.Seth,Properties.Resources.Leafling,
-              Properties.Resources.Jevil,Properties.Resources.Yellow,Properties.Resources.Cat_Mike,Properties.Resources.Berdly,
-              Properties.Resources.Queen
-            };
-            int randomIndex = CustomRandom.GetRandomNumber(0, enemyNames.Length - 1);
-            string enemyName = enemyNames[randomIndex];
-            int abilityIndex = CustomRandom.GetRandomNumber(0, specialAbilities.Length - 1);
-            string randomAbility = specialAbilities[abilityIndex];
-            pictureBoxEnemy.Image = enemyImages[randomIndex];
-            int enemyLevel = CustomRandom.GetRandomNumber(Kris.getLevel(), Kris.getLevel() + 1);
-            enemy = new Enemy(enemyName, enemyLevel,randomAbility);
+            enemy = (new EnemyGenerator()).Create(Kris.getLevel());
+
+            pictureBoxEnemy.Image = enemy.GetImage();
             labelNameBattle2.Text = enemy.GetName() + " (LVL " + enemy.getLevel() + ")";
             UpdateBars();
+            
             AddLog("Бій розпочато! Проти вас: " + enemy.GetName() + " (" + enemy.getLevel() + " рівень).");
-            if (enemy.GetSpecialAbility() == "None")
+            
+            if (enemy.GetSpecialAbility() == SpecialAbilities.None)
             {
                 AddLog("Особливих вмінь у ворога немає.");
             }
             else
             {
-                AddLog("Особливе вміння ворога: " + enemy.GetSpecialAbility() + "");
+                AddLog("Особливе вміння ворога: " + EnemyGenerator.GetNameSpecialAbilities(enemy.GetSpecialAbility()) + "");
             }
         }
         private void UpdateBars()
@@ -79,25 +62,29 @@ namespace RPG_project.Pages
             if (enemy.HP.GetCurrent() <= 0)
             {
                 pictureBoxKris.Image=Properties.Resources.Kris_win;
+
                 int rewardGold = enemy.GetRewardGold();
                 int rewardExp = enemy.GetRewardXp();
+
                 Kris.AddReward(rewardGold, rewardExp);
+
                 Kris.HP.Increase(Kris.HP.GetMax());
                 Kris.MP.Increase(Kris.MP.GetMax());
+
                 MessageBox.Show(" Ви отримали " + rewardGold + " темних доларів та " + rewardExp + " досвіду!", "Ви виграли!:)", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 mainForm.EndBattle();
                 return;
             }
 
             int abilityChance = CustomRandom.GetRandomNumber(1, 100);
-            if (enemy.GetSpecialAbility() != "None" && abilityChance <= 50)
+            if (enemy.GetSpecialAbility() != SpecialAbilities.None && abilityChance <= 50)
             {
-                if (enemy.GetSpecialAbility() == "Лікування")
+                if (enemy.GetSpecialAbility() == SpecialAbilities.Healing)
                 {
                     int healed = enemy.Heal();
                     AddLog(enemy.GetName() + " лікує себе і відновлює собі " + healed + " HP!");
                 }
-                else if (enemy.GetSpecialAbility() == "Сильний удар")
+                else if (enemy.GetSpecialAbility() == SpecialAbilities.StrongPunch)
                 {
                     int heavyDamage = Kris.TakeDamage(enemy.PowerStrike());
                     AddLog(enemy.GetName() + " використовує Сильний удар і наносить " + heavyDamage + " урону!");
